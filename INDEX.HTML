@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Navbar</title>
+  <style>
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex; /* Make the list items flex items */
+    }
+
+    li {
+      margin: 0 10px;
+    }
+
+    /* Media query for smaller screens (adjust breakpoint as needed) */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+      }
+
+      nav ul li {
+        margin: 5px 0; /* Adjust spacing for stacked items */
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+</body>
+</html>
